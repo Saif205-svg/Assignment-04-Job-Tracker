@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 | Job Tracker</title>
+    <!-- added tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class=" w-[80%] max-w-[1110px] mx-auto">
+        <h1 class="text-[32px] font-semibold text-blue-950">Job Application Tracker</h1>
+        <div class="grid grid-cols-3 mt-[20px] gap-[16px]">
+            <div class="border border-gray-200 p-[20px]">
+                <p class="text-[14px]">Total</p>
+                <p class="text-[24px] text-blue-950 font-bold">8</p>
+            </div>
+            <div class="border border-gray-200 p-[20px]">
+                <p class="text-[14px]">Interview</p>
+                <p class="text-green-400 font-bold text-[24px]">0</p>
+            </div>
+            <div class="border border-gray-200 p-[20px]">
+                <p class="text-[14px]">Rejected</p>
+                <p class="text-red-400 font-bold text-[24px]">0</p>
+            </div>
+        </div>
+        <hr style="border: 1px solid #e6e7e9;" class="my-[30px]">
+    </header>
+
+    <main class="w-[80%] mx-auto max-w-[1110px]">
+        <div class="flex justify-between">
+            <p class="text-[20px] text-blue-950 font-semibold">Available Jobs</p>
+            <p style="color: gray;">8 Jobs</p>
+        </div>
+        <div class="mt-[24px] flex gap-2 ">
+            <button class="py-[10px] px-[32px] font-bold text-white rounded bg-blue-400"
+                style="border: 1px solid #e6e7e9;">All</button>
+            <button style="border: 1px solid #e6e7e9;" class="px-[14px] rounded py-[10px]">Interview</button>
+            <button style="border: 1px solid #e6e7e9;" class="px-[14px] rounded py-[10px]">Rejected</button>
+        </div>
+        <!-- main card section -->
+        <div>
+            <!-- card 1 -->
+            <div style="border: 1px solid #e6e7e9;" class="rounded-[8px] mt-[16px] space-y-[10px] p-[24px]">
+                <div class="flex justify-between">
+                    <p>Mobile First Corp</p>
+                    <img src="Vector.png" alt="" style="border: 1px solid #e6e7e9;" class="rounded-full p-[10px]">
+                </div>
+                <p>React Native Developer</p>
+                <div class="flex gap-3">
+                    <p>Remote</p>
+                    <p>Full Time</p>
+                    <p>$130,000-$175,00</p>
+                </div>
+                <div>
+                    <button>Not Applied</button>
+                </div>
+                <p>Build cross-platform mobile applications using React Native. Work on products used by millions of
+                    users worldwide.</p>
+                <div>
+                    <button>INTERVIEW</button>
+                    <button>REJECTED</button>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div style="border: 1px solid #e6e7e9;" class="rounded-[8px] mt-[16px] space-y-[10px] p-[24px]">
+                <div class="flex justify-between">
+                    <p>Mobile First Corp</p>
+                    <img src="Vector.png" alt="" style="border: 1px solid #e6e7e9;" class="rounded-full p-[10px]">
+                </div>
+                <p>React Native Developer</p>
+                <div class="flex gap-3">
+                    <p>Remote</p>
+                    <p>Full Time</p>
+                    <p>$130,000-$175,00</p>
+                </div>
+                <div>
+                    <button>Not Applied</button>
+                </div>
+                <p>Build cross-platform mobile applications using React Native. Work on products used by millions of
+                    users worldwide.</p>
+                <div>
+                    <button>INTERVIEW</button>
+                    <button>REJECTED</button>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div style="border: 1px solid #e6e7e9;" class="rounded-[8px] mt-[16px] space-y-[10px] p-[24px]">
+                <div class="flex justify-between">
+                    <p>Mobile First Corp</p>
+                    <img src="Vector.png" alt="" style="border: 1px solid #e6e7e9;" class="rounded-full p-[10px]">
+                </div>
+                <p>React Native Developer</p>
+                <div class="flex gap-3">
+                    <p>Remote</p>
+                    <p>Full Time</p>
+                    <p>$130,000-$175,00</p>
+                </div>
+                <div>
+                    <button>Not Applied</button>
+                </div>
+                <p>Build cross-platform mobile applications using React Native. Work on products used by millions of
+                    users worldwide.</p>
+                <div>
+                    <button>INTERVIEW</button>
+                    <button>REJECTED</button>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div style="border: 1px solid #e6e7e9;" class="rounded-[8px] mt-[16px] space-y-[10px] p-[24px]">
+                <div class="flex justify-between">
+                    <p>Mobile First Corp</p>
+                    <img src="Vector.png" alt="" style="border: 1px solid #e6e7e9;" class="rounded-full p-[10px]">
+                </div>
+                <p>React Native Developer</p>
+                <div class="flex gap-3">
+                    <p>Remote</p>
+                    <p>Full Time</p>
+                    <p>$130,000-$175,00</p>
+                </div>
+                <div>
+                    <button>Not Applied</button>
+                </div>
+                <p>Build cross-platform mobile applications using React Native. Work on products used by millions of
+                    users worldwide.</p>
+                <div>
+                    <button>INTERVIEW</button>
+                    <button>REJECTED</button>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div style="border: 1px solid #e6e7e9;" class="rounded-[8px] mt-[16px] space-y-[10px] p-[24px]">
+                <div class="flex justify-between">
+                    <p>Mobile First Corp</p>
+                    <img src="Vector.png" alt="" style="border: 1px solid #e6e7e9;" class="rounded-full p-[10px]">
+                </div>
+                <p>React Native Developer</p>
+                <div class="flex gap-3">
+                    <p>Remote</p>
+                    <p>Full Time</p>
+                    <p>$130,000-$175,00</p>
+                </div>
+                <div>
+                    <button>Not Applied</button>
+                </div>
+                <p>Build cross-platform mobile applications using React Native. Work on products used by millions of
+                    users worldwide.</p>
+                <div>
+                    <button>INTERVIEW</button>
+                    <button>REJECTED</button>
+                </div>
+            </div>
+            <!-- card 6 -->
+            <div style="border: 1px solid #e6e7e9;" class="rounded-[8px] mt-[16px] space-y-[10px] p-[24px]">
+                <div class="flex justify-between">
+                    <p>Mobile First Corp</p>
+                    <img src="Vector.png" alt="" style="border: 1px solid #e6e7e9;" class="rounded-full p-[10px]">
+                </div>
+                <p>React Native Developer</p>
+                <div class="flex gap-3">
+                    <p>Remote</p>
+                    <p>Full Time</p>
+                    <p>$130,000-$175,00</p>
+                </div>
+                <div>
+                    <button>Not Applied</button>
+                </div>
+                <p>Build cross-platform mobile applications using React Native. Work on products used by millions of
+                    users worldwide.</p>
+                <div>
+                    <button>INTERVIEW</button>
+                    <button>REJECTED</button>
+                </div>
+            </div>
+            <!-- card 7 -->
+            <div style="border: 1px solid #e6e7e9;" class="rounded-[8px] mt-[16px] space-y-[10px] p-[24px]">
+                <div class="flex justify-between">
+                    <p>Mobile First Corp</p>
+                    <img src="Vector.png" alt="" style="border: 1px solid #e6e7e9;" class="rounded-full p-[10px]">
+                </div>
+                <p>React Native Developer</p>
+                <div class="flex gap-3">
+                    <p>Remote</p>
+                    <p>Full Time</p>
+                    <p>$130,000-$175,00</p>
+                </div>
+                <div>
+                    <button>Not Applied</button>
+                </div>
+                <p>Build cross-platform mobile applications using React Native. Work on products used by millions of
+                    users worldwide.</p>
+                <div>
+                    <button>INTERVIEW</button>
+                    <button>REJECTED</button>
+                </div>
+            </div>
+            <!-- card 8 -->
+            <div style="border: 1px solid #e6e7e9 ;" class="rounded-[8px] mt-[16px] space-y-[10px] p-[24px]">
+                <div class="flex justify-between">
+                    <p>Mobile First Corp</p>
+                    <img src="Vector.png" alt="" style="border: 1px solid #e6e7e9;" class="rounded-full p-[10px]">
+                </div>
+                <p>React Native Developer</p>
+                <div class="flex gap-3">
+                    <p>Remote</p>
+                    <p>Full Time</p>
+                    <p>$130,000-$175,00</p>
+                </div>
+                <div>
+                    <button>Not Applied</button>
+                </div>
+                <p>Build cross-platform mobile applications using React Native. Work on products used by millions of
+                    users worldwide.</p>
+                <div>
+                    <button>INTERVIEW</button>
+                    <button>REJECTED</button>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- JS link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
