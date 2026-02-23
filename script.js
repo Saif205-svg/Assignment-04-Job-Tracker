@@ -30,7 +30,7 @@ function calculateCount(){
         `
         return;
         
-    }
+    };
 } calculateCount()
 
 function toggleStyle(id){
