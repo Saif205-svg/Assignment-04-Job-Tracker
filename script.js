@@ -166,7 +166,6 @@ mainContainer.addEventListener('click',function(event){
         }
     }
 });
-
 // new html file create with template literal
 function newInterview(){
     filterSection.innerHTML='';
@@ -178,8 +177,7 @@ function newInterview(){
                 <p class="text-gray-400 mt-2 mb-[111px]">Check back soon for new job opportunities.</p>
             </div>
         `
-        return;
-        
+        return; 
     }
     filterSection.innerHTML = ""
     for(let interview of interviewList){
@@ -249,6 +247,6 @@ function newReject (){
                 </div>
             </div>
         `
-        filterSection.appendChild(div)
-    }
-}
+        filterSection.appendChild(div);
+    };
+};

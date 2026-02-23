@@ -1,21 +1,26 @@
-
-## Answers to Questions
-
 ### 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
-নির্দিষ্ট কোন IDName কে ধরার জন্য JavaScript এ আমরা getElementByID() মেথডটি ব্যাবহার করা হয়ে থাকে। আবার একই নামে ডিফাইন করা ক্লাস কে javascript এ ধরার জন্য getElementsByClassName() মেথডটি ব্যাবহার করাতে পারি। এই মেথড এর সাহায্যে একাধিক ক্লাস কে ধরা যায়। querySelector() মেথড রিটার্ন করে CSS সিলেক্টরে match হওয়া প্রথম element কে। আর querySelectorAll() method রিটার্ন করে CSS সিলেক্টরে match হওয়া সকল ক্লাস এবং আইডি কে। উদাহরনঃ querySelectorAll('.className','#IdName');
+To target a specific ID name in JavaScript, we use the getElementById() method. Similarly, to target elements defined with the same class name in JavaScript, we can use the getElementsByClassName() method. With the help of this method, multiple elements that share the same class can be selected.
+
+The querySelector() method returns the first element that matches a specified CSS selector. On the other hand, the querySelectorAll() method returns all elements that match a specified CSS selector, including classes and IDs.
+
+Example:
+querySelectorAll('.className', '#IdName');
 
 ### 2. How do you create and insert a new element into the DOM?
-DOM এ আমরা নতুন কোন element create করতে চাইলে createElement() method ব্যাবহা করব, আর সেই element এ কোন ডাটা বা element insert করতে চাইলে innerHTML অথবা create করা element অনুসারে innerText মেথড ও ব্যাবহার করতে পারি।
+In the DOM, if we want to create a new element, we use the createElement() method. To insert data or another element into that created element, we can use the innerHTML property. Depending on the type of content we want to add, we can also use the innerText property for the created element.
 
 ### 3. What is Event Bubbling? And how does it work?
-Event Bubbling হল যখন আমরা কোন বাটনে ক্লিক করি তখন সেটা শুধুমাত্র সে বাটনে থেমে না থেকে ক্রমান্বয়ে তার parent এর দিকে যায় এবং সেটা ব্রাউজারে console করে। এটি target element থেকে শুরু করে html document পর্যন্ত চলতে থাকে।
+Event Bubbling occurs when we click on a button and the event does not stop at that button. Instead, it gradually propagates upward to its parent elements and is logged in the browser console. It starts from the target element and continues up to the HTML document.
 
 ### 4. What is Event Delegation in JavaScript? Why is it useful?
-Event Delegation হচ্ছে এমন একটি মেথড যার সাহায্যে আমরা যে element এ ক্লিক করব সেটি ডিলিট হয়ে যাবে। এটি ব্যাবহারের ৩ টি মূল কারন রয়েছেঃ (i) Dynamically কাজ করে, (ii) performance ভালো থাকে যেমন ১০০ টি element এর জন্য ১০০ টি addEventListener না বসিয়ে delegation করে কাজ সম্পাদন করা যায়। (iii) কোড ক্লিন রাখা যায়।
+Event Delegation is a technique through which the element we click on can be removed. There are three main reasons for using it:
+(i) It works dynamically.
+(ii) It improves performance. For example, instead of adding 100 separate addEventListener() methods for 100 elements, we can handle them using delegation.
+(iii) It helps keep the code clean.
 
 ### 5. What is the difference between preventDefault() and stopPropagation() methods?
-preventDefault() method ওয়েবসাইটের ডিফল্ট ব্যাবহারে বাধা সৃষ্টি করে, অর্থাৎ এই মেথড ব্যাবহার করলে ব্রাউজার যেটা নরমালি করত সেটা করতে পারেনা।
+The preventDefault() method prevents the default behavior of a website. In other words, when this method is used, the browser cannot perform the action it normally would.
 
-stopPropagation() method মুলত event bubbling এ কজে লাগে, অর্থাৎ stopPropagation ব্যাবহার করলে event bubbling করে parent এর দিকে যেতে পারেনা।
-preventDefault() আর stopPropagation() এই ২ মেথড এর মূল পার্থক্য হল preventDefault() ব্রাউজারকে থামায় আর stopPropagation() event bubbling কে থামায়। 
+The stopPropagation() method is mainly used in event bubbling. When stopPropagation() is applied, the event cannot bubble up to the parent elements.
 
+The main difference between preventDefault() and stopPropagation() is that preventDefault() stops the browser default action, and stopPropagation() method stops the event from bubbling up through the DOM.
